@@ -216,6 +216,15 @@ input {
   align-items: center;
 }
 
+.scroll-header .nav__link::after {
+  background-color: var(--text-color);
+}
+
+.scroll-header .nav__link:hover,
+.scroll-header .active-link {
+  color: var(--primary-color);
+}
+
 /*=============== Home ===============*/
 .home {
   background: url(../img/Lau-animacion.gif);

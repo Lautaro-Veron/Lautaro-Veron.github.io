@@ -10,7 +10,15 @@ window.addEventListener('scroll', scrollHeader);
 
 /*=============== Mixitup Filter =============== */
 
-/*=============== Testimonials Swiper =============== */
+/*=============== Active Link =============== */
+const navlink = document.querySelectorAll('.nav__link');
+
+function activeLink() {
+    navlink.forEach((a) => a.classList.remove('active-link'));
+    this.classList.add('active-link');
+}
+
+navlink.forEach((a) => a.addEventListener('click', activeLink));
 
 /*=============== Contact Form =============== */
 function SendMail () {

@@ -212,6 +212,10 @@ input {
   color: var(--text-color);
 }
 
+.scroll-header .nav {
+  align-items: center;
+}
+
 /*=============== Home ===============*/
 .home {
   background: url(../img/Lau-animacion.gif);

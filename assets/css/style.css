@@ -562,6 +562,11 @@ input {
     grid-template-columns: 5fr 7fr;
   }
 
+  .service__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+  }
+
 }
 
 @media screen and (max-width: 992px) {

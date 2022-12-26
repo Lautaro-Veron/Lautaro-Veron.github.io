@@ -208,6 +208,10 @@ input {
   box-shadow: 0 5px 8px 0 rgb(0 0 0 / 14%);
 }
 
+.scroll-header .nav__link {
+  color: var(--text-color);
+}
+
 /*=============== Home ===============*/
 .home {
   background: url(../img/Lau-animacion.gif);

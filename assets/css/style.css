@@ -641,6 +641,10 @@ input {
     row-gap: 3.5rem;
   }
 
+  .contact__container {
+    grid-template-columns: 5fr 7fr;
+  }
+
 }
 
 /* for medium devices */

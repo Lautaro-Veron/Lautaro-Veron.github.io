@@ -623,11 +623,24 @@ input {
     padding-top: 5.25rem;
   }
 
+  .home__img {
+    display: none;
+  }
+
+  .resume__container,
   .home__container {
     grid-template-columns: 1fr;
   }
-  .home__img {
-    display: none;
+
+  .resume__container {
+    row-gap: 3.5rem;
+  }
+
+  
+
+  .section {
+    padding-top:  3rem;
+    padding-bottom: 3rem;
   }
 
 }

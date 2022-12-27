@@ -671,9 +671,16 @@ input {
     row-gap: 3.75rem;
   }
 
+  .contact__container {
+    row-gap: 2rem;
+  }
+
 }
 
 @media screen and (max-width: 576px) {
+  .home {
+    padding-top: 4.4rem;
+  }
 }
 
 /* for small devices */

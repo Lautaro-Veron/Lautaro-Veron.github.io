@@ -614,6 +614,11 @@ input {
     opacity: 0.5;
   }
 
+  .scroll-header .nav__toggle {
+    color: var(--text-color);
+    opacity: 1;
+  }
+
 }
 
 /* for medium devices */

@@ -694,4 +694,12 @@ input {
     font-size: 0.875rem;
   }
 
+  .home__list dd {
+    padding-left: 5.75em;
+  }
+
+  .home__social-link {
+    font-size: 1.3rem;
+  }
+
 }

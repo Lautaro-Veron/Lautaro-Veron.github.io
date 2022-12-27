@@ -21,14 +21,41 @@ function activeLink() {
 navlink.forEach((a) => a.addEventListener('click', activeLink));
 
 /*=============== Contact Form =============== */
-function SendMail () {
-    var params = {
-        from_name : document.getElementById("#contact-name").value,
-        email_id : document.getElementById("#contact-email").value,
-        message : document.getElementById("#message").value
+const contactForm = document.getElementById('contact-form'),
+contactName = document.getElementById('contact-name'),
+contactEmail = document.getElementById('contact-email'),
+Message = document.getElementById('message'),
+contactMessage = document.getElementById('contact-message');
+
+const sendEmail = (e) => {
+    e.preventDefault();
+    
+    //check if the field has a value
+    
+    if (contactName.value === '' || contactEmail.value === '' || Message.value === '') {  //add and remove color
+        contactMessage.classList.remove('color-light');
+        contactMessage.classList.add('color-dark');
+
+        //show message
+        contactMessage.textContent = 'Write all the input fields';
+    } else{
+        // serviceID - templeteID - #form - publickey
+        emailjs.sendForm('service_xqiy6gy','template_dua0ysq','#contact-form','L4iHUbaGswW1j_qEl')
+
+
+        .then(() => {
+            //show message and add color + dot to open emoji
+            contactMessage.classList.add('color-light');
+            contactMessage.textContent = 'Message sent ✔';
+
+            //remove message after 5 seconds
+            setTimeout(() => {
+                contactMessage.textContent = '';
+            }, 5000);
+        });
     }
-    emailjs.send("service_xqiy6gy", "template_dua0ysq", params).then(function(res) {
-        alert("Success!" + res.status);
-    })
-}
+};
+
+contactForm.addEventListener('submit', sendEmail);
+
 

@@ -554,6 +554,15 @@ input {
 /*=============== BreakPoints ===============*/
 /* for large devices */
 @media screen and (max-width: 1200px) {
+  :root {
+    --fs-h1: 2.75rem;
+    --fs-h2: 2.25rem;
+    --fs-lg: 1.125rem;
+    --fs-base: 1rem;
+    --fs-sm: 0.875rem;
+    --fs-xs: 0.75rem;
+  }
+  
   .container {
     max-width: 960px;
   }

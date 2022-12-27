@@ -597,6 +597,10 @@ input {
     transform: translateX(-100%);
   }
 
+  .show-menu {
+    transform: translateX(0);
+  }
+
   .nav__list {
     flex-direction: column;
     row-gap: 2.125rem;

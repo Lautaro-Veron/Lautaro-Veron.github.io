@@ -585,6 +585,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(-100%);
   }
 
   .nav__list {
@@ -602,6 +603,15 @@ input {
     font-size: 1.5rem;
     position: absolute;
     top: 2.7rem;
+    left: 8%;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .nav__toggle {
+    color: #fff;
+    font-size: 1.25rem;
+    opacity: 0.5;
   }
 
 }

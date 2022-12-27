@@ -619,6 +619,17 @@ input {
     opacity: 1;
   }
 
+  .home {
+    padding-top: 5.25rem;
+  }
+
+  .home__container {
+    grid-template-columns: 1fr;
+  }
+  .home__img {
+    display: none;
+  }
+
 }
 
 /* for medium devices */

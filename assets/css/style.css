@@ -681,8 +681,17 @@ input {
   .home {
     padding-top: 4.4rem;
   }
+
 }
 
 /* for small devices */
 @media screen and (max-width: 350px) {
+  :root__work {
+    font-size: var(--fs-sm);
+  }
+
+  .home__list {
+    font-size: 0.875rem;
+  }
+
 }

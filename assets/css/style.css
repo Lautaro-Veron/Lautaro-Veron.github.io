@@ -627,6 +627,11 @@ input {
     display: none;
   }
 
+  .section {
+    padding-top:  3rem;
+    padding-bottom: 3rem;
+  }
+
   .resume__container,
   .home__container {
     grid-template-columns: 1fr;
@@ -634,13 +639,6 @@ input {
 
   .resume__container {
     row-gap: 3.5rem;
-  }
-
-  
-
-  .section {
-    padding-top:  3rem;
-    padding-bottom: 3rem;
   }
 
 }

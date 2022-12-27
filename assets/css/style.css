@@ -658,6 +658,19 @@ input {
 
 /* for medium devices */
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .contact__container,
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__container {
+    row-gap: 3.75rem;
+  }
+
 }
 
 @media screen and (max-width: 576px) {

@@ -8,8 +8,6 @@ function scrollHeader(){
 
 window.addEventListener('scroll', scrollHeader);
 
-/*=============== Mixitup Filter =============== */
-
 /*=============== Active Link =============== */
 const navlink = document.querySelectorAll('.nav__link');
 
@@ -50,8 +48,6 @@ function linkAction(){
 }
 
 navLink.forEach((n) => n.addEventListener('click', linkAction));
-
-/*=============== Background Header =============== */
 
 /*=============== Contact Form =============== */
 const contactForm = document.getElementById('contact-form'),

@@ -10,6 +10,10 @@
       rel="stylesheet"
     />
 
+    <!--=============== Swiper Css ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
     <!--=============== Css ===============-->
@@ -32,7 +36,6 @@
       disabled
     />
 
-
     <title>Portfolio Website</title>
   </head>
   <body>
@@ -46,11 +49,15 @@
             </li>
 
             <li>
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+
+            <li>
               <a href="#resume" class="nav__link">Resume</a>
             </li>
 
             <li>
-              <a href="#skills" class="nav__link">Skills</a>
+              <a href="#portfolio" class="nav__link">Portfolio</a>
             </li>
 
             <li>
@@ -69,8 +76,8 @@
       </nav>
     </header>
 
-      <!--=============== Main ===============-->
-      <main class="main">
+    <!--=============== Main ===============-->
+    <main class="main">
       <!--=============== Home ===============-->
       <section class="home" id="home">
         <div class="home__container container grid">
@@ -108,7 +115,7 @@
         
         <p class="hello__details text-lg">
           <p>“Mi nombre es Lautaro, soy estudiante de ingeniería en automatización y control. Además de mi pasión por la tecnología, me encanta el arte visual y todo lo relacionado con la creación de imágenes y diseños. Actualmente estoy desarrollando mis habilidades en el diseño web y disfrutando cada momento de aprendizaje.</p>
-          <p>Mi principal interés es encontrar maneras de combinar mi pasión por el arte y la tecnología en proyectos innovadores. Experimentar con nuevas tecnologías y encontrar soluciones creativas a problemas técnicos. Uno de mis logros más recientes ha sido el desarrollo de una página web para una pequeña empresa local, que me permitió aplicar mis habilidades en ambos campos.</p>
+          <p>Mi principal interés es encontrar maneras de combinar mi pasión por el arte y la tecnología en proyectos innovadores; Experimentar con nuevas tecnologías y encontrar soluciones creativas a problemas técnicos. Uno de mis logros más recientes ha sido el desarrollo de una página web para una pequeña empresa local, que me permitió aplicar mis habilidades en ambos campos.</p>
           <p>También disfruto de dibujar, hacer muralismo, realizar animaciones y conectar con la naturaleza. Me encanta viajar y conocer nuevas culturas.</p>
           <p>Mi sueño a largo plazo es seguir desarrollando mis habilidades en el campo de la tecnología y el arte y poder utilizarlas para hacer una diferencia positiva en el mundo.</p>
           <p>Si querés saber más sobre mí o tenés alguna pregunta, no dudes en contactarme a través de mi correo electrónico o en mis redes sociales.</p>
@@ -118,6 +125,9 @@
           <i class="ri-download-line"></i>DOWNLOAD CV
         </a>
       </section>
+
+      <!--=============== Services ===============-->
+      <section class="services section container" id="services"></section>
 
       <!--=============== Resume ===============-->
       <section class="section container" id="resume">
@@ -275,6 +285,17 @@
         </div>
       </section>
 
+      <!--=============== Projects ===============-->
+      <section class="work section container" id="portfolio">
+
+      </section>
+
+      <!--=============== Testimonials ===============-->
+      <section class="testimonials section"></section>
+
+      <!--=============== Blog ===============-->
+      <section class="blog section container" id="blog"></section>
+
       <!--=============== Contact ===============-->
       <section class="contact section" id="contact">
         <div class="contact__content container">
@@ -326,22 +347,24 @@
         </div>
       </section>
     </main>
-      <!--=============== Mixitup ===============-->
-      <script src="assets/js/mixitup.min.js"></script>
 
-      <!--=============== Swiper Js ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--=============== Style Switcher ===============-->
+    <div class="style__switcher"></div>
+
+    <!--=============== Mixitup ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== Swiper Js ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!--=============== Email Js ===============-->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
     <script type="text/javascript">
-      (function() {
-        emailjs.init("user_pdByzEMSsRVfAeA0uOccz");
-      })(); 
+    (function(){
+      emailjs.init("L4iHUbaGswW1j_qEl");
+    })();
     </script>
 
     <!--=============== Js ===============-->

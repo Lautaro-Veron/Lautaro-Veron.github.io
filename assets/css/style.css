@@ -340,7 +340,6 @@ input {
   column-gap: 0.3rem;
 }
 
-/*=============== Services ===============*/
 
 /*=============== Resume ===============*/
 .resume__container {
@@ -420,12 +419,6 @@ input {
   display: block;
   background-color: var(--primary-color-alt);
 }
-
-/*=============== Projects ===============*/
-
-/*=============== Testimonials ===============*/
-
-/*=============== Blog ===============*/
 
 /*=============== Contact ===============*/
 .contact {
@@ -547,9 +540,6 @@ input {
   text-align: center;
 }
 
-/*=============== Blog Details ===============*/
-
-/*=============== Style Switcher ===============*/
 
 /*=============== BreakPoints ===============*/
 /* for large devices */

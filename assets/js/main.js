@@ -90,6 +90,6 @@ const sendEmail = (e) => {
 };
 
 contactForm.addEventListener('submit', sendEmail);
-/*=============== Style Switcher =============== */
+
 
 

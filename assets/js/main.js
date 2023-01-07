@@ -50,42 +50,32 @@ function linkAction(){
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
 /*=============== Contact Form =============== */
-const contactForm = document.getElementById('contact-form'),
-contactName = document.getElementById('contact-name'),
-contactEmail = document.getElementById('contact-email'),
-Message = document.getElementById('message'),
-contactMessage = document.getElementById('contact-message');
+const btn = document.getElementById('button');
 
-const sendEmail = (e) => {
-    e.preventDefault();
-    
-    //check if the field has a value
-    
-    if (contactName.value === '' || contactEmail.value === '' || Message.value === '') {  //add and remove color
-        contactMessage.classList.remove('color-light');
-        contactMessage.classList.add('color-dark');
+document.getElementById('contact-form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-        //show message
-        contactMessage.textContent = 'Write all the input fields';
-    } else{
-        // serviceID - templeteID - #form - publickey
-        emailjs.sendForm('service_xqiy6gy','template_dua0ysq','#contact-form','L4iHUbaGswW1j_qEl')
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_dua0ysq';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Message sent ✔');
 
 
-        .then(() => {
-            //show message and add color + dot to open emoji
-            contactMessage.classList.add('color-light');
-            contactMessage.textContent = 'Message sent ✔';
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
 
-            //remove message after 5 seconds
-            setTimeout(() => {
-                contactMessage.textContent = '';
-            }, 5000);
-        });
-    }
-};
-
-contactForm.addEventListener('submit', sendEmail);
+    document.getElementById('contact-name').value = '';
+    document.getElementById('contact-email').value = '';
+    document.getElementById('message').value = '';
+});
 
 
 
